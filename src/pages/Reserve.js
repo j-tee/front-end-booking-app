@@ -79,7 +79,11 @@ function Reserve() {
         throw new Error(data.message || 'Failed to book reservation');
       }
     } catch (error) {
-      toast.error(error.message || 'Failed to book reservation');
+      const { response } = error;
+      const { data } = response;
+      const { message } = data;
+
+      toast.error(message || 'Failed to book reservation');
     } finally {
       setIsProcessing(false);
     }
