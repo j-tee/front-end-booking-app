@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/front-end-booking-app/static/css/main.9d39d0b6.css",
+    "main.js": "/front-end-booking-app/static/js/main.ab96c367.js",
+    "static/js/787.84315bcd.chunk.js": "/front-end-booking-app/static/js/787.84315bcd.chunk.js",
+    "index.html": "/front-end-booking-app/index.html",
+    "main.9d39d0b6.css.map": "/front-end-booking-app/static/css/main.9d39d0b6.css.map",
+    "main.ab96c367.js.map": "/front-end-booking-app/static/js/main.ab96c367.js.map",
+    "787.84315bcd.chunk.js.map": "/front-end-booking-app/static/js/787.84315bcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9d39d0b6.css",
+    "static/js/main.ab96c367.js"
+  ]
+}
