@@ -51,7 +51,7 @@ function UpdateReservation() {
     try {
       setIsProcessing(true);
       const response = await axios.put(
-        `http://localhost:3000/api/users/${userId}/doctors/${doctorId}/reservations/${reservation.id}`,
+        `https://booking-backend-e3gn.onrender.com/api/users/${userId}/doctors/${doctorId}/reservations/${reservation.id}`,
         {
           reservation: {
             user_id: userId,

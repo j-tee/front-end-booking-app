@@ -53,7 +53,7 @@ function Reserve() {
     try {
       setIsProcessing(true);
       const response = await axios.post(
-        `http://localhost:3000/api/users/${userId}/doctors/${doctorId}/reservations`,
+        `https://booking-backend-e3gn.onrender.com/api/users/${userId}/doctors/${doctorId}/reservations`,
         {
           reservation: {
             user_id: userId,

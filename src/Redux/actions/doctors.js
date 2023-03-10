@@ -8,7 +8,7 @@ export const FETCH_DOCTOR = 'fectch_doctor';
 export const fetchSingleDoctor = createAsyncThunk(
   FETCH_DOCTOR,
   async ({ doctorId, userId }) => {
-    const { data } = await axios(`http://localhost:3000/api/users/${userId}/doctors/${doctorId}`);
+    const { data } = await axios(`https://booking-backend-e3gn.onrender.com/api/users/${userId}/doctors/${doctorId}`);
     return data;
   },
 );

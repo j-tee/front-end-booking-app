@@ -8,7 +8,7 @@ import './css/login.css';
 
 const LoginSignUp = () => {
   const navigate = useNavigate();
-  const UserUrl = 'http://localhost:3000/api/users';
+  const UserUrl = 'https://booking-backend-e3gn.onrender.com/api/users';
   const [username, setUsername] = useState('');
   const [showPopup, setShowPopup] = useState(false);
 
