@@ -69,7 +69,7 @@ describe('AddDoctorForm', () => {
     fireEvent.click(addButton);
 
     expect(fetch).toHaveBeenCalledTimes(1);
-    expect(fetch).toHaveBeenCalledWith('http://localhost:3000/api/users/1/doctors', {
+    expect(fetch).toHaveBeenCalledWith('https://booking-backend-e3gn.onrender.com/api/users/1/doctors', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

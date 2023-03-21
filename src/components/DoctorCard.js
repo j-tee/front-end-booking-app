@@ -20,7 +20,7 @@ function DoctorCard({ doctor, canDelete }) {
 
   const deleteDoctor = async () => {
     try {
-      const response = await fetch(`http://localhost:3000/api/users/${user.id}/doctors/${doctor.id}`, {
+      const response = await fetch(`https://booking-backend-e3gn.onrender.com/api/users/${user.id}/doctors/${doctor.id}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
