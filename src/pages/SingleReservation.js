@@ -42,7 +42,7 @@ function SingleReservation() {
       setIsProcessing(true);
 
       const response = await axios.delete(
-        `http://localhost:3000/api/users/${userId}/doctors/${doctorId}/reservations/${reservationId}`,
+        `https://booking-backend-e3gn.onrender.com/api/users/${userId}/doctors/${doctorId}/reservations/${reservationId}`,
         {
           headers: {
             'Content-Type': 'application/json',

@@ -10,7 +10,7 @@ export const fetchReservations = createAsyncThunk(
   FETCH_RESERVATIONS,
   async (params) => {
     const { data } = await axios(
-      `http://localhost:3000/api/users/${params.userId}/doctors/${params.doctorId}/reservations`,
+      `https://booking-backend-e3gn.onrender.com/api/users/${params.userId}/doctors/${params.doctorId}/reservations`,
     );
     return data;
   },
@@ -21,7 +21,7 @@ export const fetchReservation = createAsyncThunk(
   FETCH_RESERVATION,
   async ({ userId, doctorId, reservationId }) => {
     const { data } = await axios(
-      `http://localhost:3000/api/users/${userId}/doctors/${doctorId}/reservations/${reservationId}`,
+      `https://booking-backend-e3gn.onrender.com/api/users/${userId}/doctors/${doctorId}/reservations/${reservationId}`,
     );
     return data;
   },
